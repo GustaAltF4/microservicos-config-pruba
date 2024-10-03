@@ -1,2 +1,7 @@
-server.port= 8002
-spring.application.name=auto-microservice
+spring:
+  application:
+    name: auto-microservice
+  cloud:
+    config:
+      enabled: true
+      uri: http://localhost:8081
