@@ -6,7 +6,7 @@ spring:
     config:
       server:
         git:
-          default-label: eureka
+          default-label: multiple-instance
           uri: https://github.com/GustaAltF4/microservicos-config-pruba
           search-paths: config-data
   application:
