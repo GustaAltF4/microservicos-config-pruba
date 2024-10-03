@@ -33,13 +33,13 @@ public class UsuarioService {
 
     public List<AutoDto> getAutos(int usuarioId){
         List<AutoDto> autos = restTemplate.getForObject(
-                "http://localhost:8002/auto/usuario/" + usuarioId,
+                "http://auto-microservice/auto/usuario/" + usuarioId,
                 List.class);
         return autos;
     }
     public List<MotoDto> getMotos(int usuarioId){
         List<MotoDto> motos = restTemplate.getForObject(
-                "http://localhost:8003/moto/usuario/" + usuarioId,
+                "http://moto-microservice/moto/usuario/" + usuarioId,
                 List.class);
         return motos;
     }
