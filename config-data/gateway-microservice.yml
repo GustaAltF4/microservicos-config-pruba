@@ -1,0 +1,31 @@
+server:
+  port: 8080
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      default-zone: http://localhost:8761/eureka/
+    instance:
+      hostname: localhost
+
+spring:
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        - id: usuario-microservice
+          uri: lb://usuario-microservice
+          predicates:
+            - Path=/usuario/**
+        - id: auto-microservice
+          uri: lb://auto-microservice
+          predicates:
+            - Path=/auto/**
+        - id: moto-microservice
+          uri: lb://moto-microservice
+          predicates:
+            - Path=/moto/**
+

@@ -6,7 +6,7 @@ spring:
     config:
       server:
         git:
-          default-label: multiple-instance
+          default-label: gateway
           uri: https://github.com/GustaAltF4/microservicos-config-pruba
           search-paths: config-data
   application:

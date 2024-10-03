@@ -9,6 +9,7 @@
         <module name="moto-microservice" />
         <module name="eureka-microservice" />
         <module name="auto-microservice" />
+        <module name="gateway-microservice" />
         <module name="microservice-config" />
         <module name="usuario-microservice" />
       </profile>
@@ -18,6 +19,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="auto-microservice" options="-parameters" />
       <module name="eureka-microservice" options="-parameters" />
+      <module name="gateway-microservice" options="-parameters" />
       <module name="microservice-config" options="-parameters" />
       <module name="moto-microservice" options="-parameters" />
       <module name="usuario-microservice" options="-parameters" />
